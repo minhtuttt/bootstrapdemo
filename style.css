@@ -1,0 +1,14 @@
+/* body {
+  height: 100%;
+  background-image: url("./img/bg-masthead.jpg");
+  background-color: tomato;
+} */
+.imagecover{
+  height: 100%;
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-creative/img/bg-masthead.jpg");
+  /* min-height: 500px;
+  background-size: cover; */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-color: teal; */
+}
