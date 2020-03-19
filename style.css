@@ -1,10 +1,49 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto');
-html body {
-  height: 100%;
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
   width: 100%;
-  font-family: Roboto;
-  font-size: 25px;
-} */
+}
+
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 #brand {
   color: rgba(236, 226, 226, 0.884) !important;
 }
@@ -14,23 +53,107 @@ html body {
 .navbar li a:hover {
   color: white !important;
 }
-.masthead{
+
+.masthead {
   height: 100%;
-  /* background-image: url("https://blackrockdigital.github.io/startbootstrap-creative/img/bg-masthead.jpg"); */
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://blackrockdigital.github.io/startbootstrap-creative/img/bg-masthead.jpg");;
+  background: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url("./img/bg-masthead.jpg");
   min-height: 700px;
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding-top: 220px;
 }
 #btn {
   background-color: #f4623a;
   color: aliceblue;
-  /* border-radius: 20%; */
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  font-weight: bolder;
 }
+
 #btn:hover {
-  background-color: rgb(214, 59, 42);
+  background-color: #d6370c;
 }
-hr {
-  border-color: #f4623a;
+.bg-section {
+  background-color: #f4623a;
+}
+.bg1-section {
+  background-color: #343a40;
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+.material-icons.md-orange {
+  color: #f4623a;
+}
+#btn2 {
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  font-weight: bolder;
+}
+#btn2:hover {
+  background-color: #6c757d;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+.material-icons.md-pc-80 {
+  font-size: 80px;
+}
+
+.img-container {
+  position: relative;
+  background-color: #f4623a;
+}
+.width-img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.img-container:hover .width-img {
+  opacity: 0.1;
+}
+.img-container:hover .middle {
+  opacity: 1;
 }
