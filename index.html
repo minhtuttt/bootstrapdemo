@@ -10,12 +10,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- jQuery first, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
@@ -24,26 +21,26 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="navigation">
     <div class="container">
-      <a class="navbar-brand" href="#" id="brand">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      <a class="navbar-brand js-scroll-trigger" href="#" id="brand">Start Bootstrap</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#About">About</a>
+            <a class="nav-link active js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Services">Services</a>
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Portfolio">Portfolio</a>
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -73,189 +70,191 @@
     </div>
   </header>
 
-  <section id="About" class="py-5 bg-section">
-    <div class="container h-100">
-      <div class="row h-100 text-center justify-content-center">
-        <div class="col-lg-10">
-          <h2 class="font-weight-light">We've got what you need!</h2>
-          <hr style=" border: 2px solid #ffffff; width: 40px;" class="my-3" />
-        </div>
-        <div class="col-lg-8">
-          <p class="text-white font-weight-light mb-5">
-            Start Bootstrap has everything you need to get your new website up
-            and running in no time! Choose one of our open source, free to
-            download, and easy to use themes! No strings attached!
-          </p>
-          <button id="btn2" type="button" class="btn btn-xl text-uppercase bg-white text-dark" href="#">
-            Get Started!
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="Services" class="py-5">
-    <div class="container h-100">
-      <div class="row h-100 text-center justify-content-center">
-        <div class="col-lg-10">
-          <h2 class="font-weight-light">At Your Service</h2>
-          <hr style=" border: 2px solid #f4623a; width: 40px;" class="my-3" />
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <i class="material-icons md-pc-80 md-orange">signal_wifi_4_bar</i>
-            <h3>Sturdy Themes</h3>
-            <p>Our themes are updated regularly to keep them bug free!</p>
+  <div class="content">
+    <section id="about" class="py-5 bg-section page-section" style="padding-top: 128px !important; padding-bottom: 128px !important;">
+      <div class="container h-100">
+        <div class="row h-100 text-center justify-content-center">
+          <div class="col-lg-10">
+            <h2 class="font-weight-light">We've got what you need!</h2>
+            <hr style=" border: 2px solid #ffffff; width: 40px;" class="my-3" />
           </div>
-          <div class="col-lg-3 col-md-6">
-            <i class="material-icons md-pc-80 md-orange">laptop_mac</i>
-            <h3>Up to Date</h3>
-            <p>All dependencies are kept current to keep things fresh.</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <i class="material-icons md-pc-80 md-orange">language</i>
-            <h3>Ready to Publish</h3>
-            <p>You can use this design as is, or you can make changes!</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <i class="material-icons md-pc-80 md-orange">favorite</i>
-            <h3>Made with Love</h3>
-            <p>Is it really open source if it's not made with love?</p>
+          <div class="col-lg-8">
+            <p class="text-white font-weight-light mb-5">
+              Start Bootstrap has everything you need to get your new website up
+              and running in no time! Choose one of our open source, free to
+              download, and easy to use themes! No strings attached!
+            </p>
+            <button id="btn2" type="button" class="btn btn-xl text-uppercase bg-white text-dark" href="#">
+              Get Started!
+            </button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="Portfolio">
-    <div class="row no-gutters">
-      <div class="col-lg-4 col-sm-6 px-0">
-        <div class="img-container">
-          <img src="./img/1.jpg" class="width-img" />
-          <div class="middle text-center">
-            <div class="text-white text-uppercase">
-              Category
+    </section>
+  
+    <section id="services" class="py-5 page-section" style="padding-top: 128px !important; padding-bottom: 128px !important;">
+      <div class="container h-100">
+        <div class="row h-100 text-center justify-content-center">
+          <div class="col-lg-10">
+            <h2 class="font-weight-light">At Your Service</h2>
+            <hr style=" border: 2px solid #f4623a; width: 40px;" class="my-3" />
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <i class="material-icons md-pc-80 md-orange">signal_wifi_4_bar</i>
+              <h3>Sturdy Themes</h3>
+              <p>Our themes are updated regularly to keep them bug free!</p>
             </div>
-            <div class="text-white">
-              Project Name
+            <div class="col-lg-3 col-md-6">
+              <i class="material-icons md-pc-80 md-orange">laptop_mac</i>
+              <h3>Up to Date</h3>
+              <p>All dependencies are kept current to keep things fresh.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <i class="material-icons md-pc-80 md-orange">language</i>
+              <h3>Ready to Publish</h3>
+              <p>You can use this design as is, or you can make changes!</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <i class="material-icons md-pc-80 md-orange">favorite</i>
+              <h3>Made with Love</h3>
+              <p>Is it really open source if it's not made with love?</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 px-0">
-        <div class="img-container">
-          <img src="./img/2.jpg" class="width-img" />
-          <div class="middle text-center">
-            <div class="text-white text-uppercase">
-              Category
+    </section>
+  
+    <section id="portfolio">
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-sm-6 px-0">
+          <div class="img-container">
+            <img src="./img/1.jpg" class="width-img" />
+            <div class="middle text-center">
+              <div class="text-white text-uppercase">
+                Category
+              </div>
+              <div class="text-white">
+                Project Name
+              </div>
             </div>
-            <div class="text-white">
-              Project Name
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 px-0">
+          <div class="img-container">
+            <img src="./img/2.jpg" class="width-img" />
+            <div class="middle text-center">
+              <div class="text-white text-uppercase">
+                Category
+              </div>
+              <div class="text-white">
+                Project Name
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 px-0">
+          <div class="img-container">
+            <img src="./img/3.jpg" class="width-img" />
+            <div class="middle text-center">
+              <div class="text-white text-uppercase">
+                Category
+              </div>
+              <div class="text-white">
+                Project Name
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 px-0">
+          <div class="img-container">
+            <img src="./img/4.jpg" class="width-img" />
+            <div class="middle text-center">
+              <div class="text-white text-uppercase">
+                Category
+              </div>
+              <div class="text-white">
+                Project Name
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 px-0">
+          <div class="img-container">
+            <img src="./img/5.jpg" class="width-img" />
+            <div class="middle text-center">
+              <div class="text-white text-uppercase">
+                Category
+              </div>
+              <div class="text-white">
+                Project Name
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 px-0">
+          <div class="img-container">
+            <img src="./img/6.jpg" class="width-img" />
+            <div class="middle text-center">
+              <div class="text-white text-uppercase">
+                Category
+              </div>
+              <div class="text-white">
+                Project Name
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 px-0">
-        <div class="img-container">
-          <img src="./img/3.jpg" class="width-img" />
-          <div class="middle text-center">
-            <div class="text-white text-uppercase">
-              Category
+    </section>
+  
+    <section class="py-5 bg1-section" style="padding-top: 128px !important; padding-bottom: 128px !important;">
+      <div class="container h-100">
+        <div class="row h-100 text-center justify-content-center">
+          <div class="col-lg-10">
+            <h2 class="font-weight-light text-white">
+              Free Download at Start Bootstrap!
+            </h2>
+          </div>
+          <div class="col-lg-8">
+            <button id="btn2" type="button" class="btn btn-xl text-uppercase bg-white text-dark" href="#">
+              Download now!
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="contact" class="py-5" style="padding-top: 128px !important; padding-bottom: 128px !important;">
+      <div class="container h-100">
+        <div class="row h-100 text-center justify-content-center">
+          <div class="col-lg-10">
+            <h2 class="font-weight-light">Let's Get In Touch!</h2>
+            <hr style=" border: 2px solid #f4623a; width: 40px;" class="my-3" />
+          </div>  
+          <div class="col-lg-10">
+            <p class="font-weight-light mb-5">
+              Ready to start your next project with us? Give us a call or send
+              us an email and we will get back to you as soon as possible!
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <i class="material-icons md-pc-80 md-orange">phone</i>
+              <p>+1 (202) 555-0149</p>
             </div>
-            <div class="text-white">
-              Project Name
+            <div class="col-lg-6 col-md-12">
+              <i class="material-icons md-pc-80 md-orange">mail</i>
+              <p>contact@yourwebsite.com</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 px-0">
-        <div class="img-container">
-          <img src="./img/4.jpg" class="width-img" />
-          <div class="middle text-center">
-            <div class="text-white text-uppercase">
-              Category
-            </div>
-            <div class="text-white">
-              Project Name
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 px-0">
-        <div class="img-container">
-          <img src="./img/5.jpg" class="width-img" />
-          <div class="middle text-center">
-            <div class="text-white text-uppercase">
-              Category
-            </div>
-            <div class="text-white">
-              Project Name
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 px-0">
-        <div class="img-container">
-          <img src="./img/6.jpg" class="width-img" />
-          <div class="middle text-center">
-            <div class="text-white text-uppercase">
-              Category
-            </div>
-            <div class="text-white">
-              Project Name
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-5 bg1-section">
-    <div class="container h-100">
-      <div class="row h-100 text-center justify-content-center">
-        <div class="col-lg-10">
-          <h2 class="font-weight-light text-white">
-            Free Download at Start Bootstrap!
-          </h2>
-        </div>
-        <div class="col-lg-8">
-          <button id="btn2" type="button" class="btn btn-xl text-uppercase bg-white text-dark" href="#">
-            Download now!
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="Contact" class="py-5">
-    <div class="container h-100">
-      <div class="row h-100 text-center justify-content-center">
-        <div class="col-lg-10">
-          <h2 class="font-weight-light">Let's Get In Touch!</h2>
-          <hr style=" border: 2px solid #f4623a; width: 40px;" class="my-3" />
-        </div>
-        <div class="col-lg-10">
-          <p class="font-weight-light mb-5">
-            Ready to start your next project with us? Give us a call or send
-            us an email and we will get back to you as soon as possible!
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <i class="material-icons md-pc-80 md-orange">phone</i>
-            <p>+1 (202) 555-0149</p>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <i class="material-icons md-pc-80 md-orange">mail</i>
-            <p>contact@yourwebsite.com</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+    </section>
+  </div>
+  
   <footer class="bg-light text-center">
-    <div>Copyright © 2019 - Start Bootstrap</div>
+    <div style="padding-top: 3rem !important; padding-bottom: 3rem !important;">Copyright © 2019 - Start Bootstrap</div>
   </footer>
 </body>
 
